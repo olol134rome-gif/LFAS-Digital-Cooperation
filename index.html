@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>London Fire Service Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="shield">🔥</span><div><b>London Fire Service</b><small>Community & Operations Hub</small></div></div>
+  <nav>
+    <a href="#incidents">Incidents</a><a href="#stations">Stations</a><a href="#ranks">Ranks</a><a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">LONDON • OPERATIONS</p>
+    <h1>Trusted to serve<br><span>and protect London.</span></h1>
+    <p class="lead">A fan-made, LFB-inspired dashboard for exploring recent incidents, stations, ranks and useful service information.</p>
+    <div class="actions"><a class="btn primary" href="#incidents">View incidents</a><a class="btn ghost" href="#ranks">Explore ranks</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="status"><i></i> DEMO DATA FEED</div>
+    <strong>Latest activity</strong>
+    <p>Incident examples are based on information published by London Fire Brigade and are not a live emergency dispatch feed.</p>
+  </div>
+</section>
+
+<main>
+<section id="incidents" class="section">
+  <div class="section-head"><div><p class="eyebrow">LATEST INCIDENTS</p><h2>Recent activity</h2></div>
+  <select id="typeFilter"><option value="all">All types</option><option>Outdoor fire</option><option>Fire at commercial property</option><option>House or flat fire</option><option>Flooding</option></select></div>
+  <div id="incidentGrid" class="grid"></div>
+</section>
+
+<section id="stations" class="section alt">
+  <div class="section-head"><div><p class="eyebrow">YOUR COMMUNITY</p><h2>Fire stations</h2></div><input id="stationSearch" placeholder="Search stations..."></div>
+  <div id="stationGrid" class="grid"></div>
+</section>
+
+<section id="ranks" class="section">
+  <p class="eyebrow">OPERATIONAL STRUCTURE</p><h2>Ranks</h2>
+  <p class="muted">A simple overview of operational ranks used in the modern London Fire Brigade structure.</p>
+  <div id="rankGrid" class="rank-grid"></div>
+</section>
+
+<section id="about" class="section about">
+  <div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>Built for GitHub</h2></div>
+  <div class="about-copy">
+    <p>This is an original fan-made website template inspired by the information architecture of a public fire-service website. It is <b>not affiliated with or endorsed by London Fire Brigade</b>.</p>
+    <p>For real-time information, always use official emergency-service channels. This demo deliberately does not provide emergency dispatch, crew locations, personal information or operational instructions.</p>
+    <a class="text-link" href="https://www.london-fire.gov.uk/incidents/" target="_blank" rel="noreferrer">Open the official LFB incidents page ↗</a>
+  </div>
+</section>
+</main>
+
+<footer><div><b>London Fire Service Hub</b><br><span>Unofficial community project • © 2026</span></div><div>Emergency? Call <b>999</b>.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
